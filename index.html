@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Message</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2054335cda.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="h1">
+        <div class="top-banner">
+            <div class="container1 box1">
+                <div class="small-bold-case banner-text">
+                    <img src="https://cdn.ifaketextmessage.com/theme/images/ifake_text_message_iphone_logo.png"
+                        title="iFake Text Message | Create Fake Text Message Conversation">
+                </div>
+                <div class="small-bold-case banner-text">I fake text message</div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container flex">
+            <div class="columns">
+                <div class="column">
+                    <!-- left form part -->
+                    <div class="input-part">
+
+                        <div class="inputname"><label class="label" for="input">Name</label>
+                            <input class="input is-rounded" type=" text" name="name" id="i1" placeholder="name"
+                                oninput="changename()">
+                        </div>
+                        <br>
+                        <div class="message-conv">
+                            <label class="label" for="input">Message Conversation</label>
+                            <input class="input m1" type="text" id="messageInput1" placeholder="message"
+                                oninput="txtmessage()">
+                            <input class="button is-light is-rounded" type="button" value="left" onclick="left()">
+                            <input class="button is-dark is-rounded" type="button" value="right" onclick="right()">
+                        </div>
+                        <br>
+                        <div id="textbox">
+
+                        </div>
+                        <button class="button is-black" onclick="addtext()">addelement</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- right output part -->
+                    <div class="output-part">
+                        <div class="nav-bar flex navbar">
+                            <div class="message-part navbar-item">
+                                <i class="fa-solid fa-arrow-left"></i><label class="label">Messages</label>
+                            </div>
+                            <div class="name-part navbar-item">
+                                <strong>
+                                    <p id="p1">Name</p>
+                                </strong>
+                            </div>
+                            <div class="details-part navbar-item"><label class="label">Details</label></div>
+                        </div>
+                        <hr>
+                        <br>
+                        <div class="messagesection">
+                            <div id="text1">
+                                <p id="msgInput1" class="msg"></p>
+                                <div id="textbox2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerSection">
+            <div class="footerButtons box1">
+                <a href="/tutorial/" class="button is-link is-light">Tutorial</a>
+                <a class="button is-link is-light" href="/about/">About</a>
+                <a class="button is-link is-light" href="/faq/">FAQ</a>
+            </div>
+            <div class="clear box1">
+            <p class="copyright">Copyright © 2023 iFakeTextMessage.com</p>
+            <p class="privacy">iFakeTextMessage is not affiliated with Apple, iPhone, iMessage, or iPhone Text Messages
+                -<a href="/privacy/">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
